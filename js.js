@@ -1,6 +1,7 @@
 var kamuTop;
 var kamuKiri;
-var skor;
+var skor = 0;
+var skorTertinggi = 0;
 var ilang;
 var bom1Top;var bom1Kiri;
 var bom2Top;var bom2Kiri;
@@ -44,6 +45,7 @@ function mulai() {
 	document.getElementById('bom9').style = "left: "+bom9Kiri+"px;top: "+bom9Top+"px; opacity: " + ilang + ";";
 	document.getElementById('bom9').style = "left: "+bom9Kiri+"px;top: "+bom9Top+"px; opacity: " + ilang + ";";
 	document.getElementById('makanan').style = "left: "+makananKiri+"px;top: "+makananTop+"px;";
+	document.getElementById('tertinggi').innerHTML = skorTertinggi;
 }
 
 function jalan() {
@@ -116,6 +118,7 @@ function kalah() {
 	document.getElementById('skor').innerHTML = "skor terakhir anda: "+skor;
 	document.getElementById('tombolNavigasi').style = "display: none;";
 	document.getElementById('tombolMulai').style = "display: block;";
+	if (skor >= skorTertinggi) {skorTertinggi = skor;}
 	mulai();
 }
 

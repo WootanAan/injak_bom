@@ -53,6 +53,7 @@ button {
 #wm {
 	color: #eee;
 	opacity: 0.5;
+	position: absolute;
 }
 
 /* animasi */
