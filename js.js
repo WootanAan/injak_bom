@@ -145,3 +145,21 @@ function pencet(evt) {
 			break;
 	}
 }
+
+function aktifKotak() {
+	document.getElementById('kotak').style = "display: block;";
+	document.getElementById('matikanKotak').style = "display: block;";
+	document.getElementById('aktifKotak').style = "display: none;";
+	for (var i = 0; i < 25; i++) {
+		var jarak = i*20;
+		var kotakKe = i+1;
+		document.getElementById('kotak'+kotakKe).style = "top: "+jarak+"px;";
+		document.getElementById('kotakVer'+kotakKe).style = "left: "+jarak+"px; top: 0;";
+	}
+}
+
+function matikanKotak() {
+	document.getElementById('kotak').style = "display: none;";
+	document.getElementById('aktifKotak').style = "display: block;";
+	document.getElementById('matikanKotak').style = "display: none;";
+}
