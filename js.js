@@ -18,6 +18,7 @@ function acak(){
 }
 
 function mulai() {
+	document.addEventListener("keydown",pencet);
 	skor = 0;
 	ilang = 1;
 	kamuTop = acak();
@@ -123,4 +124,21 @@ function menang() {
 	skor += 10;
 	document.getElementById('skor').innerHTML = "skor anda: "+skor;
 	document.getElementById('makanan').style = "left: "+makananKiri+"px;top: "+makananTop+"px;";
+}
+
+function pencet(evt) {
+	switch(evt.keyCode) {
+		case 37:
+			kiri();
+			break;
+		case 38:
+			atas();
+			break;
+		case 39:
+			kanan();
+			break;
+		case 40:
+			bawah();
+			break;
+	}
 }
