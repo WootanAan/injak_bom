@@ -50,6 +50,11 @@ button {
 	animation: kedip 1s linear infinite;
 }
 
+#wm {
+	color: #eee;
+	opacity: 0.5;
+}
+
 /* animasi */
 @keyframes kedip {
 	50% {
