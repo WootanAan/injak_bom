@@ -95,6 +95,8 @@ function cek(){
 		kalah();
 	} else if (kamuTop == makananTop && kamuKiri == makananKiri) {
 		menang();
+	} else if (kamuTop > 490 || kamuTop < 0 || kamuKiri > 490 || kamuKiri < 0) {
+		kalah();
 	} else {}
 	ilang -= 0.01;
 	document.getElementById('bom1').style = "left: "+bom1Kiri+"px;top: "+bom1Top+"px; opacity: " + ilang + ";";
