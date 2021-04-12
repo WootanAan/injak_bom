@@ -46,6 +46,7 @@ function mulai() {
 	document.getElementById('bom9').style = "left: "+bom9Kiri+"px;top: "+bom9Top+"px; opacity: " + ilang + ";";
 	document.getElementById('makanan').style = "left: "+makananKiri+"px;top: "+makananTop+"px;";
 	document.getElementById('tertinggi').innerHTML = skorTertinggi;
+	matikanKotak();
 }
 
 function jalan() {
