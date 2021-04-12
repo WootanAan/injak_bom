@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game Injak Bom by Aan</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script type="text/javascript" src="js.js"></script>
+</head>
+<body onload="mulai()">
+	<div class="game">
+		<div class="canvas" id="canvas">
+			<div id="kamu"></div>
+			<div id="bom1" class="bom"></div>
+			<div id="bom2" class="bom"></div>
+			<div id="bom3" class="bom"></div>
+			<div id="bom4" class="bom"></div>
+			<div id="bom5" class="bom"></div>
+			<div id="bom6" class="bom"></div>
+			<div id="bom7" class="bom"></div>
+			<div id="bom8" class="bom"></div>
+			<div id="bom9" class="bom"></div>
+			<div id="makanan"></div>
+		</div>
+		<div class="tombol">
+			<center>
+				<button id="tombolMulai" onclick="jalan()">Mulai</button>
+				<div id="skor"></div>
+			</center>
+			<center id="tombolNavigasi">
+				<button onclick="atas()">Up</button><br>
+				<button onclick="kiri()">Left</button><button onclick="kanan()">Right</button><br>
+				<button onclick="bawah()">Down</button>
+			</center>
+		</div>
+	</div>
+</body>
+</html>
